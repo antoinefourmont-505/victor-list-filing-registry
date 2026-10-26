@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "target": "list_rows",
+  "list": {
+    "id": "list_2d96408015f2",
+    "name": "filing_registry",
+    "description": "One row per document encountered by the file ranger — tracks classification, filing status, and run provenance",
+    "collectionId": "coll_8432587f2424",
+    "pageId": "bd4f9535-2b3a-4195-8257-9a20e5464b6a",
+    "pipelineId": "pl_f786e20bea32",
+    "columns": [
+      {
+        "key": "doc_id",
+        "label": "Document ID",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "client_name",
+        "label": "Client Name",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "doc_type",
+        "label": "Document Type",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "date_received",
+        "label": "Date Received",
+        "type": "date",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "email_subject",
+        "label": "Email Subject",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "sender",
+        "label": "Sender",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "filename",
+        "label": "Filename",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "filing_status",
+        "label": "Filing Status",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "confidence",
+        "label": "Confidence",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "run_id",
+        "label": "Run ID",
+        "type": "text",
+        "required": null,
+        "options": null
+      }
+    ]
+  },
+  "recordsFile": "data/records.json",
+  "import": {
+    "writeMode": "append",
+    "idField": "records[].id",
+    "rowDataPath": "records[].data"
+  }
+}
