@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 2,
-  "resourceKey": "list.victor.filing-registry",
-  "runtimeDataPolicy": "definitions_only",
+  "schemaVersion": 1,
+  "listId": "list_2d96408015f2",
   "list": {
+    "id": "list_2d96408015f2",
     "name": "filing_registry",
-    "isPublic": true,
     "description": "One row per document encountered by the file ranger — tracks classification, filing status, and run provenance",
     "language": "en",
+    "collectionId": "coll_8432587f2424",
     "columns": [
       {
         "key": "doc_id",
@@ -79,11 +79,9 @@
         "options": null
       }
     ],
-    "pipelineRef": {
-      "kind": "pipeline",
-      "resourceKey": "pipeline.victor.file-ranger-pipeline"
-    },
-    "child": null
+    "pipelineId": "pl_f786e20bea32",
+    "child": null,
+    "pageId": "bd4f9535-2b3a-4195-8257-9a20e5464b6a"
   },
-  "commitMessage": "Bind list to pipeline"
+  "commitMessage": "Initial migration from list editor"
 }
